@@ -40,5 +40,5 @@ ros2 launch kimm_wheel_legged_robot_viz joint_state_publisher_gui.launch.py
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-Maintainer: [Hyunho Cho] (<chohh7391@khu.ac.kr>)  
+Maintainer: [Hyunho Cho, Kangmin Lee] (<chohh7391@khu.ac.kr, khukmin99@khu.ac.kr>)  
 Lab: [RCI Lab @ Kyung Hee University](https://rcilab.khu.ac.kr)
