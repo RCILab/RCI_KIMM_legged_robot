@@ -41,4 +41,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 **Maintainer:** Hyunho Cho (`chohh7391@khu.ac.kr`), Kangmin Lee (`khukmin99@khu.ac.kr`)
+
 **Lab**: [RCI Lab @ Kyung Hee University](https://rcilab.khu.ac.kr)
