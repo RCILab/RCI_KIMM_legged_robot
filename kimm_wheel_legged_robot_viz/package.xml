@@ -4,6 +4,7 @@
   <version>0.0.1</version>
   <description>Kimm Wheel Legged Robot Rviz</description>
 
+  <maintainer email="khukmin99@khu.ac.kr">Kangmin Lee</maintainer>
   <maintainer email="chohh7391@khu.ac.kr">Hyunho Cho</maintainer>
   <license>Apache-2.0</license>
 
