@@ -6,10 +6,9 @@ This repository contains the software and models for a unique legged robot devel
 
 https://github.com/user-attachments/assets/bf0ed73e-b05b-43fd-bd33-afee59358275
 
-
 ## Dependencies
-- ROS 2 Humble (>= 2022.05)
-- Python 3.10 / C++17
+- ROS 2 Humble (>= 2022.05)  
+- Python 3.10 / C++17  
 
 ## Installation
 1. **Clone the Repository:** Create a workspace and clone this repository recursively.
@@ -17,6 +16,7 @@ https://github.com/user-attachments/assets/bf0ed73e-b05b-43fd-bd33-afee59358275
 mkdir -p ~/kimm_wheel_legged_robot_ws/src && cd ~/kimm_wheel_legged_robot_ws/src
 git clone https://github.com/RCILab/RCI_KIMM_legged_robot.git
 ```
+
 2. **Build the Workspace:** Install dependencies and build the packages.
 ```bash
 cd ~/kimm_wheel_legged_robot_ws
@@ -31,15 +31,32 @@ source ~/.bashrc
 ```
 
 ## Usage
-Follow these steps to check robot model
+
+### 1. Check Robot Model in RViz
+To visualize the robot and interact with its joints:
 ```bash
 ros2 launch kimm_wheel_legged_robot_viz joint_state_publisher_gui.launch.py
 ```
+
+### 2. Run Robot in Gazebo
+To spawn the robot in Gazebo and start simulation:
+```bash
+ros2 launch kimm_wheel_legged_robot_bringup kimm_gazebo.launch.py
+```
+
+This will load the robot model into Gazebo and start the bringup process for driving and locomotion testing.  
+
+### 3. Drive the Robot in Gazebo
+You can control the robot using the keyboard teleoperation node:
+```bash
+ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r cmd_vel:=/diff_drive_base_controller/cmd_vel_unstamped
+```
+
+This will allow you to send velocity commands to the robot for driving in Gazebo.  
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Contact
-**Maintainer:** Hyunho Cho (`chohh7391@khu.ac.kr`), Kangmin Lee (`khukmin99@khu.ac.kr`)
-
+**Maintainer:** Hyunho Cho (`chohh7391@khu.ac.kr`), Kangmin Lee (`khukmin99@khu.ac.kr`)  
 **Lab**: [RCI Lab @ Kyung Hee University](https://rcilab.khu.ac.kr)
