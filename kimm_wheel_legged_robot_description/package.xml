@@ -4,6 +4,7 @@
   <name>kimm_wheel_legged_robot_description</name>
   <version>0.0.0</version>
   <description>Kimm Wheel Legged Robot Description</description>
+  <maintainer email="khukmin99@khu.ac.kr">Kangmin Lee</maintainer>
   <maintainer email="chohh7391@khu.ac.kr">Hyunho Cho</maintainer>
   <license>TODO: License declaration</license>
 
